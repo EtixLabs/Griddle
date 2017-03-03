@@ -217,7 +217,7 @@ var Griddle = React.createClass({
     },
 
     /* if we have a filter display the max page and results accordingly */
-    setFilter: function setFilter(filter, updatedResults=null) {
+    setFilter: function setFilter(filter, updatedResults) {
         if (this.props.useExternal) {
             this.props.externalSetFilter(filter);
             return;
